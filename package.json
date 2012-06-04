@@ -1,0 +1,36 @@
+{
+  "author": {
+    "name": "Kilian Ciuffolo",
+    "email": "kilian.ciuffolo@gmail.org",
+    "url": "http://nailik.org"
+  },
+  "name": "bump",
+  "main": "./bump",
+  "bin": {
+    "bump": "./bump.js"
+  },
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kilianc/node-bump.git"
+  },
+  "_npmUser": {
+    "name": "kilianc",
+    "email": "kilian.ciuffolo@gmail.com"
+  },
+  "_id": "bump@0.0.1",
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "_engineSupported": true,
+  "_npmVersion": "1.1.21",
+  "_nodeVersion": "v0.6.18",
+  "_defaultsLoaded": true,
+  "dist": {
+    "shasum": "07330e835fc195cb55fbf36d216df4f43b0e7218"
+  },
+  "_from": "."
+}
