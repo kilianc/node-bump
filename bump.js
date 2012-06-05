@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
 var fs = require('fs'),
-    packageJson = require('./package'),
+    cwd = process.cwd(),
+    packageJson = require(cwd + '/package'),
     fromVersion = packageJson.version,
     toVersion = process.argv[2] || false
 
@@ -13,6 +14,6 @@ if (!toVersion) {
 
 packageJson.version = toVersion
 
-fs.writeFileSync('./package.json', JSON.stringify(packageJson, null, '  '))
+fs.writeFileSync(cwd + '/package.json', JSON.stringify(packageJson, null, '  '))
 
 console.log('\n \033[33m%s:\n \033[39mv%s => v%s\n\033[32m ↑ bum bum bumped!\n', packageJson.name, fromVersion, toVersion)

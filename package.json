@@ -9,7 +9,7 @@
   "bin": {
     "bump": "./bump.js"
   },
-  "version": "0.0.1",
+  "version": "0.2.3",
   "repository": {
     "type": "git",
     "url": "git://github.com/kilianc/node-bump.git"
