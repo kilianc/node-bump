@@ -7,9 +7,9 @@ var fs = require('fs'),
     toVersion = process.argv[2] || false
 
 if (!toVersion) {
-  var fromVersionParts = fromVersion.split('.')
-  fromVersionParts[2] = Number(fromVersionParts[2]) + 1
-  toVersion = fromVersionParts.join('.')
+  toVersion = fromVersion.replace(/^([\d\.]+)([\-|\.])(\d+)$/, function () {
+  	return arguments[1] + arguments[2] + (Number(arguments[3]) + 1)
+  })
 }
 
 packageJson.version = toVersion
