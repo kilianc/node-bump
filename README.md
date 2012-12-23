@@ -8,4 +8,4 @@ Node.js version bumper
 
 # Usage
 
-`bump`
+In your project directory: `bump`
