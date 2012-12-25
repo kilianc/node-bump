@@ -1,13 +1,13 @@
 # node-bump
 
-[![Build Status](https://travis-ci.org/webjay/node-bump.png)](https://travis-ci.org/webjay/node-bump)
+[![Build Status](https://secure.travis-ci.org/kilianc/node-bump.png)](https://travis-ci.org/kilianc/node-bump)
 
-Node.js version bumper
+nodejs version bumper
 
 ## Install
 
-`npm install -g git://github.com/webjay/node-bump.git`
+`npm install -g bump`
 
 # Usage
 
-In your project directory: `bump`
+    usage: bump [version]
