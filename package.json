@@ -9,7 +9,7 @@
   "bin": {
     "bump": "./bump.js"
   },
-  "version": "0.2.3",
+  "version": "0.2.4-0",
   "repository": {
     "type": "git",
     "url": "git://github.com/kilianc/node-bump.git"
@@ -32,5 +32,11 @@
   "dist": {
     "shasum": "07330e835fc195cb55fbf36d216df4f43b0e7218"
   },
-  "_from": "."
+  "_from": ".",
+  "contributors": [
+    {
+      "name": "Jacob Friis Saxberg",
+      "email": "jacob@saxberg.dk"
+    }
+  ]
 }
