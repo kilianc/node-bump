@@ -10,6 +10,22 @@ if (!toVersion) {
   toVersion = fromVersion.replace(/^([\d\.]+)([\-|\.])(\d+)$/, function () {
   	return arguments[1] + arguments[2] + (Number(arguments[3]) + 1)
   })
+} else {
+  var tempVersion = fromVersion.split('-')[0].split('.')
+
+  if (toVersion.toLowerCase() === 'major') {
+    tempVersion[0]++
+    tempVersion[1] = 0
+    tempVersion[2] = 0
+    toVersion = tempVersion.join('.')
+  } else if (toVersion.toLowerCase() === 'minor') {
+    tempVersion[1]++
+    tempVersion[2] = 0
+    toVersion = tempVersion.join('.')
+  } else if (toVersion.toLowerCase() === 'patch') {
+    tempVersion[2]++
+    toVersion = tempVersion.join('.')
+  }
 }
 
 packageJson.version = toVersion
