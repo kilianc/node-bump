@@ -8,6 +8,21 @@ nodejs version bumper
 
 `npm install -g bump`
 
-# Usage
+## Usage
+    Original package version
+    'package': 'v1.2.3'
 
-    usage: bump [version]
+    Bump major number
+    bump major // v2.0.0
+
+    Bump minor number
+    bump minor // v1.3.0
+
+    Bump patch number
+    bump patch // v1.2.4
+
+    Defaults to bumping patch number
+    bump // v1.2.4
+
+    You can even specify your own!
+    bump 1.2.3-4 // v1.2.3-4
