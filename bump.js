@@ -16,4 +16,4 @@ packageJson.version = toVersion
 
 fs.writeFileSync(cwd + '/package.json', JSON.stringify(packageJson, null, '  '))
 
-console.log('\n \033[33m%s:\n \033[39mv%s => v%s\n\033[32m ↑ bum bum bumped!\n', packageJson.name, fromVersion, toVersion)
+console.log('\n \033[33m%s:\n \033[39mv%s => v%s\n\033[32m ↑ bum bum bumped!\033[39m\n', packageJson.name, fromVersion, toVersion)
