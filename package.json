@@ -19,5 +19,8 @@
       "name": "Jacob Friis Saxberg",
       "email": "jacob@saxberg.dk"
     }
-  ]
+  ],
+  "dependencies": {
+    "semver": "^2.2.1"
+  }
 }
